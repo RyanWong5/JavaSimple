@@ -1,8 +1,8 @@
-package listeners;
+package event_handler;
 
 import javax.swing.JFrame;
 
-public class ListenFrame {
+public class EventFrame {
 	
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
@@ -10,7 +10,7 @@ public class ListenFrame {
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		ListenCanvas canvas = new ListenCanvas();
+		EventCanvas canvas = new EventCanvas();
 		frame.add(canvas);
 		frame.setVisible(true);
 	}

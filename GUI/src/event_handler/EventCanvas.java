@@ -1,4 +1,4 @@
-package listeners;
+package event_handler;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -9,17 +9,16 @@ import java.awt.event.MouseListener;
 
 import javax.swing.JPanel;
 
-public class ListenCanvas extends JPanel implements MouseListener, KeyListener {
+public class EventCanvas extends JPanel implements MouseListener, KeyListener {
 	
 	int xCord, yCord;
 	Character display;
 	
 	// Constructor
-	public ListenCanvas() {
+	public EventCanvas() {
 		addMouseListener(this); // mouse events
 		addKeyListener(this); 	// key events
 		setFocusable(true);		// for keys as well
-		
 		xCord = 0; yCord = 0;
 		display = 'a';
 		
@@ -48,12 +47,18 @@ public class ListenCanvas extends JPanel implements MouseListener, KeyListener {
 		yCord = e.getY();
 		repaint();
 	}
+	
+	/**
+	 * For every type of event requires implementing the interface of the type Handler
+	 * Timer - ActionListener
+	 * Mouse - MouseListener
+	 * Keyboard - KeyListener
+	 * Be sure to initialize it with the specified object (in this example: events happens in on the JPanel)
+	 * For JButton(s) - individual buttons needs to initialize the interface for use. 
+	 */
 
 	@Override
 	public void mousePressed(MouseEvent e) {
-		xCord = e.getX();
-		yCord = e.getY();
-		repaint();		
 	}
 
 	@Override
