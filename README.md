@@ -1,7 +1,7 @@
 # JavaSimple
 Better understand how certain Java syntax work by viewing my codes!
 
-Follow the linear order listed below:
+Follow each in order:
 	
 	- GUI 
 		1. frame_canvas
