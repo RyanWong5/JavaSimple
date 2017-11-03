@@ -2,6 +2,7 @@
 Better understand how certain Java syntax work by viewing my codes!
 
 Follow the linear order listed below:
+	
 	- GUI 
 		1. frame_canvas
 		2. drawing
