@@ -3,7 +3,7 @@ Better understand how certain Java syntax work by viewing my codes!
 
 Follow each in order:
 	
-	- GUI 
+	- GUI (Graphical User Interface)
 		1. frame_canvas
 		2. drawing
 		3. event_handler
