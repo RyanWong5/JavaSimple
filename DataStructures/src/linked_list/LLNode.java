@@ -2,8 +2,8 @@ package linked_list;
 
 public class LLNode <T> {
 	
-	private T object;
-	private LLNode <T> next;
+	private T object;		 // Holds Object
+	private LLNode <T> next; // Holds reference to next object
 	
 	public LLNode(T object) {
 		this.object = object;
