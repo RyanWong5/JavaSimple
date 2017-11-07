@@ -15,7 +15,6 @@ public class MyStack <T> {
 			return false;
 		}
 		
-		
 		if (stack == null) {
 			stack = new LLNode<T>(object);
 		} else {
@@ -31,7 +30,9 @@ public class MyStack <T> {
 			return null;
 		}
 		else { 
-			return null;
+			T obj = stack.getObject();
+			stack = stack.getNext();
+			return obj;
 		}
 	}
 
